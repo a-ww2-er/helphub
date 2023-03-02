@@ -1,0 +1,98 @@
+.our-mission {
+    padding: 20px 10px;
+
+    aside {
+        img {
+            margin: 0 0 20px;
+        }
+
+        h3 {
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: var(--font-weight);
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--adv-color);
+            margin: 10px 0;
+        }
+
+        aside {
+            background-color: var(--sec-color);
+            color: var(--tie-color);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            border-radius: 8px;
+            margin: 15px 0;
+
+            div {
+
+                h4 {
+                    font-weight: var(--font-weight);
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+
+                p {
+                    font-size: 17px;
+                    line-height: 25px;
+                }
+            }
+        }
+
+        img {
+            border-radius: 8px;
+            width: 100%;
+        }
+    }
+}
+
+
+@media screen and (min-width:700px) {
+    .our-mission {
+        padding: 20px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 20px;
+        width: 100%;
+        position: relative;
+
+        >aside {
+            width: 48%;
+
+            aside{
+                position: absolute;
+                left:5%;
+                top:40%;
+                padding:10px;
+                width:43.5%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .our-mission{
+        > aside{
+            aside{
+                position: relative;
+                left:auto;
+                top:auto;
+                width: 100%;
+                padding:5px;
+
+                div{
+                    width:25%;
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+}

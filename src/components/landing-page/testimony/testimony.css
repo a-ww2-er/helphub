@@ -1,0 +1,93 @@
+.testimony {
+  padding: 20px 10px;
+}
+.testimony h5 {
+  text-transform: uppercase;
+  color: var(--sec-color);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: var(--font-weight);
+}
+.testimony h3 {
+  font-weight: var(--font-weight);
+  font-size: 24px;
+  line-height: 36px;
+  margin: 15px 0;
+}
+.testimony aside aside {
+  padding: 10px 30px;
+  background-color: var(--laying-color);
+  border-radius: 8px;
+  margin: 20px 0;
+}
+.testimony aside aside div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.testimony aside aside div img {
+  border-radius: 100%;
+  margin-right: 15px;
+}
+.testimony aside aside div span h6 {
+  font-size: 14px;
+  line-height: 21px;
+}
+.testimony aside aside div span p {
+  font-size: 12px;
+  line-height: 18px;
+}
+.testimony aside aside > p {
+  font-size: 13px;
+  line-height: 18px;
+  padding: 10px 0;
+}
+.testimony .control-icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0;
+  gap: 10px;
+}
+.testimony .control-icon span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--primary-color);
+  border-radius: 100%;
+  cursor: pointer;
+}
+.testimony .control-icon span:hover {
+  box-shadow: 0 2px 4px 0 cyan;
+}
+
+@media screen and (min-width: 700px) {
+  .testimony {
+    padding: 20px 5%;
+  }
+  .testimony h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .testimony h3 {
+    font-size: 35px;
+    line-height: 60px;
+    margin: 0;
+  }
+  .testimony > aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .testimony > aside aside {
+    padding: 20px 10px;
+  }
+  .testimony > aside aside div img {
+    margin-right: 5px;
+  }
+}/*# sourceMappingURL=testimony.css.map */

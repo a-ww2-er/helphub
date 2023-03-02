@@ -1,0 +1,62 @@
+.persuation-page {
+    padding: 20px 10px;
+    width: 100%;
+
+    aside {
+        background-color: var(--sec-color);
+        color: var(--tie-color);
+        padding: 40px 30px;
+        border-radius: 8px;
+        text-align: center;
+        width: 100%;
+
+        h2 {
+            font-weight: var(--font-weight);
+            font-size: 24px;
+            line-height: 36px;
+            margin: 0 0 25px;
+        }
+
+        button {
+            background-color: var(--tie-color);
+            color: var(--sec-color);
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: var(--font-weight);
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (min-width:700px) {
+    .persuation-page {
+        padding: 20px 5%;
+
+        aside {
+            h2 {
+                font-size: 38px;
+                line-height: 52px;
+            }
+
+            button {
+                width: 40%;
+                padding: 18px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .persuation-page {
+        aside {
+            padding: 100px 18%;
+
+            h2 {
+                font-size: 48px;
+                line-height: 72px;
+                margin: 0 0 40px;
+            }
+        }
+    }
+}

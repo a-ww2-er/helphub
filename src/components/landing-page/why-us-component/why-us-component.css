@@ -1,0 +1,63 @@
+.why-us {
+  padding: 20px 10px;
+}
+.why-us div {
+  background-color: var(--laying-color);
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+  padding: 25px 10px;
+}
+.why-us div span {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 0 15px;
+  background-color: var(--wrapper-bg);
+}
+.why-us div h3 {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 10px 0;
+}
+.why-us div p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media screen and (min-width: 700px) {
+  .why-us {
+    padding: 20px 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .why-us div {
+    width: 100%;
+    height: 260px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .why-us {
+    gap: 20px;
+  }
+  .why-us div {
+    padding: 30px 20px;
+  }
+  .why-us div h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .why-us div p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}/*# sourceMappingURL=why-us-component.css.map */

@@ -1,0 +1,13 @@
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: inset 0 2px 8px 0 black;
+}/*# sourceMappingURL=landing-page.css.map */
