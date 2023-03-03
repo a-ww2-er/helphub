@@ -1,13 +1,86 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #151515;
+  --sec-color: #1563c8;
+  --tie-color: #f2f2f2;
+  --par-color: #333333;
+  --font-weight: 700;
+  --laying-color: #f8fbff;
+  --wrapper-bg: #e6f1fe;
+  --mainTransition: all 0.4s linear;
+  --mainSpacing: 0.3rem;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 5px 5px 5px rgba(0, 0, 0, 0.244);
+  --mainBorderRadius: 0.25rem;
+  --smallWidth: 85vw;
+  --maxWidth: 40rem;
+  --fullWidth: 1170px;
+}
+
+body {
+  background-color: white;
+  font-family: "Heebo", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.btn {
+  padding: 15px 18px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0 2px 8px 0 black;
+} /*# sourceMappingURL=landing-page.css.map */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+li{
+  list-style-type:none;
+  text-transform: capitalize;
+}
+.error {
+  margin-bottom: 0;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error_page{
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 36px;
+  margin-top: 2rem;
+}
+.error_icon {
+  font-size: 60px;
+}
+@media screen and (max-width:740px){
+  .error_page{
+  
+    font-size: 26px;
+  }
 }

@@ -1,0 +1,74 @@
+.footer {
+  position: relative;
+  background-color: var(--sec-color);
+  padding: 20px;
+  color: var(--tie-color);
+  top: 50vh;
+}
+.footer aside {
+  margin: 0px 0;
+  padding: 10px 0;
+}
+.footer aside h2 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: var(--font-weight);
+}
+.footer aside h2 a {
+  text-decoration: none;
+  color: var(--tie-color);
+}
+.footer aside p {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 20px 0;
+}
+.footer aside h4 {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 0;
+}
+.footer aside div li {
+  list-style: none;
+  margin: 5px 0;
+  line-height: 21px;
+  font-size: 14px;
+}
+.footer aside div li a {
+  text-decoration: none;
+  color: var(--tie-color);
+  text-transform: capitalize;
+}
+.footer .socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  
+}
+.footer .icons {
+  font-size: 28px;
+}
+
+@media screen and (min-width: 700px) {
+  .footer {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .footer aside {
+    width: 20%;
+  }
+  .footer aside:first-child {
+    width: 40%;
+  }
+} /*# sourceMappingURL=footer.css.map */
