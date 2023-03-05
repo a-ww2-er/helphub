@@ -1,6 +1,6 @@
 .testimony {
     padding: 20px 10px;
-
+ 
     h5 {
         text-transform: uppercase;
         color: var(--sec-color);
@@ -31,6 +31,7 @@
                 img {
                     border-radius: 100%;
                     margin-right: 15px;
+                    width:20%;
                 }
 
                 span {
@@ -76,9 +77,6 @@
             cursor:pointer;
         }
 
-        span:hover{
-            box-shadow: 0 2px 4px 0 cyan;
-        }
     }
 }
 
@@ -110,7 +108,7 @@
                 div{
 
                     img{
-                        margin-right:5px;
+                        margin-right:10px;
                     }
                 }
             }

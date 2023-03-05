@@ -1,0 +1,86 @@
+.donor-details {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+.donor-details .circle:first-child {
+  background-color: var(--wrapper-bg2);
+}
+.donor-details .circle:nth-child(3) {
+  background-color: var(--sec-color);
+}
+.donor-details .donation {
+  padding: 30px 20px;
+  width: 100%;
+  background-color: var(--laying-color);
+  border-radius: 8px;
+}
+.donor-details .donation h3 {
+  margin: 5px 0 10px;
+}
+.donor-details .donation .input-field {
+  padding: 10px 0 0;
+  margin: 5% 0 20px;
+}
+.donor-details .donation .input-field div {
+  margin: 20px 0;
+}
+.donor-details .donation .input-field div label {
+  display: block;
+  text-transform: capitalize;
+  margin: 7px 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #151515;
+}
+.donor-details .donation .input-field div input {
+  width: 100%;
+  padding: 10px 20px;
+  height: 50px;
+  border: 0.5px solid var(--par-color);
+  border-radius: 8px;
+  font-size: 18px;
+}
+.donor-details .donation .input-field div input::-moz-placeholder {
+  font-size: 18px;
+}
+.donor-details .donation .input-field div input::placeholder {
+  font-size: 18px;
+}
+.donor-details .donation .input-field div input.checkbox {
+  width: auto;
+  height: auto;
+}
+.donor-details .donation .input-field b {
+  margin: 0 0 0 10px;
+}
+.donor-details .donation button {
+  padding: 20px;
+  width: 100%;
+  background-color: var(--sec-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 30px 0;
+  color: var(--tie-color);
+  color: var(--tie-color);
+}
+
+@media screen and (min-width: 700px) {
+  .donor-details {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 20px 5%;
+    gap: 20px;
+  }
+  .donor-details .donation {
+    padding: 70px 20px;
+    position: relative;
+  }
+  .donor-details .donation .input-field {
+    padding: 50px 0 0;
+  }
+}/*# sourceMappingURL=donor-information.css.map */

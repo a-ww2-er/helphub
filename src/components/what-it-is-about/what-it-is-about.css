@@ -1,0 +1,43 @@
+.what-it-is-about {
+  padding: 20px 0px;
+}
+.what-it-is-about h3 {
+  font-size: 24px;
+  line-height: 36px;
+  margin: 20px 0;
+  font-weight: var(--font-weight);
+}
+.what-it-is-about h4 {
+  font-weight: var(--font-weight);
+  font-size: 20px;
+  line-height: 36px;
+}
+.what-it-is-about aside img {
+  width: 100%;
+}
+.what-it-is-about aside p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--adv-color);
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 700px) {
+  .what-it-is-about {
+    width: 120%;
+    padding: 0;
+  }
+  .what-it-is-about h3,
+  .what-it-is-about h4 {
+    margin: 10px 0;
+    font-size: 28px;
+  }
+  .what-it-is-about h4 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .what-it-is-about {
+    width: 100%;
+  }
+}/*# sourceMappingURL=what-it-is-about.css.map */

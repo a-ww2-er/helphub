@@ -1,0 +1,81 @@
+.payment {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+.payment .circle:first-child {
+  background-color: var(--wrapper-bg2);
+}
+.payment .circle:last-child {
+  background-color: var(--sec-color);
+}
+.payment .circle:nth-child(3) {
+  background-color: var(--wrapper-bg2);
+}
+.payment .donation {
+  padding: 30px 20px;
+  width: 100%;
+  position: relative;
+  background-color: var(--laying-color);
+  border-radius: 8px;
+}
+.payment .donation h3 {
+  margin: 20px 0;
+}
+.payment .donation .input-field {
+  padding: 10px 0 0;
+  margin: 10px 0;
+}
+.payment .donation .input-field div {
+  margin: 20px 0;
+}
+.payment .donation .input-field div label {
+  display: block;
+  text-transform: capitalize;
+  margin: 7px 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #151515;
+}
+.payment .donation .input-field div input,
+.payment .donation .input-field div select {
+  width: 100%;
+  padding: 10px 20px;
+  height: 50px;
+  border: 0.5px solid var(--par-color);
+  border-radius: 8px;
+  font-size: 18px;
+}
+.payment .donation .input-field div input::-moz-placeholder {
+  font-size: 18px;
+}
+.payment .donation .input-field div input::placeholder {
+  font-size: 18px;
+}
+.payment .donation button {
+  padding: 20px;
+  width: 100%;
+  background-color: var(--sec-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 30px 0;
+  color: var(--tie-color);
+}
+
+@media screen and (min-width: 700px) {
+  .payment {
+    padding: 20px 2%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .payment {
+    padding: 20px 5%;
+  }
+}/*# sourceMappingURL=payment-details.css.map */

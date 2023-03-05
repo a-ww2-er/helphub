@@ -1,0 +1,58 @@
+.what-it-is-about {
+    padding: 20px 0px;
+
+    h3 {
+        font-size: 24px;
+        line-height: 36px;
+        margin:20px 0;
+        font-weight: var(--font-weight);
+    }
+
+    h4 {
+        font-weight: var(--font-weight);
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    aside {
+        img {
+            width: 100%;
+        }
+
+
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--adv-color);
+            margin: 10px 0;
+        }
+
+
+    }
+}
+
+@media screen and (min-width:700px) {
+    .what-it-is-about {
+        width:120%;
+        padding: 0;
+
+        h3,
+        h4 {
+            margin: 10px 0;
+            font-size: 28px;
+        }
+
+        h4 {
+            font-size: 24px;
+        }
+
+
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .what-it-is-about {
+        width:100%;
+    }
+}

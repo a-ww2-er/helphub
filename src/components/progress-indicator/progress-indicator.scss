@@ -1,0 +1,28 @@
+.indicator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width:100%;
+    height:30px;
+    
+    .circle{
+        width:20px;
+        height: 20px;
+        z-index: 4;
+        position: relative;
+        border-radius: 100%;
+        background-color: var(--wrapper-bg2);
+    }
+
+    .circle:first-child{
+        background-color: var(--sec-color);
+    }
+
+    .line-through{
+        background-color:var(--wrapper-bg2);
+        width:45%;
+        height:3.5px;
+        z-index:1;
+    }
+}

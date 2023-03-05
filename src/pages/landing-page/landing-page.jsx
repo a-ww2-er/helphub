@@ -1,6 +1,5 @@
 import "./landing-page.css";
 import IntroductoryComponent from "../../components/introductory-component/introductory-component";
-
 import OurMissionComponent from "../../components/our-mission-component/our-mission-component";
 import WhyUsComponent from "../../components/why-us-component/why-us-component";
 import VerifiedOrphanages from "../../components/verified-orphanages/verified-orphanages";

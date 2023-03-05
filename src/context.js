@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { orphanagesList } from "./local-data";
 //context:
 const AppContext = React.createContext();
@@ -8,6 +8,16 @@ const AppProvider = ({ children }) => {
   const [orphanages, setOrphanages] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [showNav, setShowNav] = useState(false);
+  const [amount, setAmount] = useState("");
+  const [select, setSelect] = useState("");
+  const [checkBox, setCheckBox] = useState(true);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [cardNumber, setCardNumber] = useState("")
+  const [date, setDate] =  useState("");
+  const [cvv, setCvv] = useState("");
+  const [pin, setPin] = useState("");
+
 
   useEffect(() => {
     const localData = () => {
@@ -30,7 +40,7 @@ const AppProvider = ({ children }) => {
 
   return (
     <AppContext.Provider
-      value={{ orphanages, setSearchTerm, setShowNav, showNav }}
+      value={{ orphanages, setSearchTerm, setShowNav, showNav, amount, setAmount, select, setSelect, name, setName, email, setEmail,cardNumber, setCardNumber, date, setDate,cvv, setCvv, checkBox, setCheckBox,pin, setPin }}
     >
       {children}
     </AppContext.Provider>
