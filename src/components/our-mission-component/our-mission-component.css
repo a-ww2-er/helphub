@@ -1,10 +1,11 @@
 .our-mission {
   padding: 20px 10px;
-  margin: 50px 20px;
 }
-.our-mission  .heroimg {
+.our-mission aside img {
   margin: 0 0 20px;
-  height: 70vh;
+}
+.our-mission aside .mission-icon {
+  width: auto;
 }
 .our-mission aside h3 {
   font-size: 24px;
@@ -37,13 +38,9 @@
   font-size: 17px;
   line-height: 25px;
 }
-
-.icon {
-  position: relative;
-  left: 0%;
-  width: 73px;
-  height: 73px;
-  object-fit: contain;
+.our-mission aside > img {
+  border-radius: 8px;
+  width: 100%;
 }
 
 @media screen and (min-width: 700px) {
@@ -63,11 +60,10 @@
   .our-mission > aside aside {
     position: absolute;
     left: 5%;
-    top: 40%;
+    top: 56%;
     padding: 10px;
     width: 43.5%;
   }
- 
 }
 @media screen and (min-width: 1000px) {
   .our-mission > aside aside {

@@ -1,7 +1,7 @@
 import { links } from "../../nav-bar-data";
 import "./navbar-component.css";
 import { FaBars } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useContext } from "react";
 import { AppContext } from "../../context";
 
@@ -37,12 +37,12 @@ const Navbar = ({ showBtn }) => {
               );
             })}
 
-            <button className="btn mobile_donate_btn donate_btn">
+           <NavLink to="/donation" className="mobile_donate_btn"> <button className="btn mobile_donate_btn donate_btn">
               Donate Now
-            </button>
+            </button></NavLink>
           </ul>
         </div>
-        <button className="btn donate_btn">Donate Now</button>
+        <NavLink to="/donation" className="donate_btn"><button className="btn donate_btn">Donate Now</button></NavLink>
       </div>
     </nav>
   );

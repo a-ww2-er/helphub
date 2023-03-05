@@ -1,9 +1,8 @@
 .footer {
-  position: relative;
   background-color: var(--sec-color);
+  margin: 0px 0 0;
   padding: 20px;
   color: var(--tie-color);
-  top: 50vh;
 }
 .footer aside {
   margin: 0px 0;
@@ -43,11 +42,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
-  
-}
-.footer .icons {
-  font-size: 28px;
+  gap: 20px;
 }
 
 @media screen and (min-width: 700px) {
@@ -71,4 +66,4 @@
   .footer aside:first-child {
     width: 40%;
   }
-} /*# sourceMappingURL=footer.css.map */
+}/*# sourceMappingURL=footer.css.map */

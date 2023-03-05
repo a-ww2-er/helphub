@@ -1,0 +1,47 @@
+.thank-you {
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+}
+.thank-you .thank-you-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thank-you .thank-you-container aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 550px;
+  text-align: center;
+}
+.thank-you .thank-you-container aside img {
+  width: auto;
+  transform-origin: 50%;
+  transform: rotate(180deg);
+}
+.thank-you .thank-you-container aside .show {
+  transform: rotate(0);
+  transition: transform 2s ease-in;
+}
+.thank-you .thank-you-container aside h3 {
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #051932;
+}
+.thank-you .thank-you-container aside p {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #151515;
+}/*# sourceMappingURL=thank-you.css.map */

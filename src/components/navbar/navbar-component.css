@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--laying-color);
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 5%;
 }
 
 .nav_toggle {
@@ -17,7 +17,8 @@
 .links {
   display: flex;
   align-items: center;
-  padding: 1rem;
+  gap:20px;
+  padding:.5rem 1rem;
 }
 .each_link {
   margin: 0 1rem;
@@ -26,10 +27,9 @@
   color: var(--sec-color);
 }
 .active{
-
   border-radius: 2.5px;
   border-bottom: solid var(--sec-color) 3px;
-  padding-bottom: 10px;
+  padding-bottom: 4px;
 }
 .donate_btn {
   background-color: var(--sec-color);
@@ -40,7 +40,7 @@
 }
 @media screen and (max-width: 740px) {
   .donate_btn{
-    display: none;
+    display:none;
   }
   .nav_container {
   padding: 0%;
@@ -61,8 +61,7 @@
   }
   .links {
     display: flex;
-    flex-direction: column;
-   
+    flex-direction: column;  
   }
   .mobile_donate_btn{
     display: block;

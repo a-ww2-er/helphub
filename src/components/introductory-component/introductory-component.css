@@ -1,6 +1,5 @@
 .introductory-component {
   padding: 10px;
-  margin: 50px 20px;
 }
 .introductory-component aside h2 {
   font-family: "Heebo", sans-serif;
@@ -31,8 +30,6 @@
 }
 .introductory-component aside img {
   margin: 20px 0;
-  height: 70vh;
-  object-fit: contain;
 }
 
 @media screen and (min-width: 700px) {
@@ -45,7 +42,6 @@
   }
   .introductory-component aside {
     width: 48%;
-    height: auto;
   }
   .introductory-component aside h2 {
     font-size: 35px;

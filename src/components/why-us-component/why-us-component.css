@@ -13,14 +13,29 @@
   margin: 20px 0;
   padding: 25px 10px;
 }
-.why-us div span {
-  display: block;
-  padding: 1rem;
-  width: auto;
-  height: auto;
+.why-us div .image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin: 0 0 15px;
   background-color: var(--wrapper-bg);
+}
+.why-us div .image-wrapper span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.why-us div .image-wrapper span .icon {
+  color: #1563c8;
+  width: 100%;
+}
+.why-us div .image-wrapper span .img2 {
+  width: 60%;
 }
 .why-us div h3 {
   font-size: 20px;
@@ -30,11 +45,6 @@
 .why-us div p {
   font-size: 14px;
   line-height: 21px;
-}
-.icon{
-  color: #1563C8;
-  height: 3rem;
-  width: 3.5rem;
 }
 
 @media screen and (min-width: 700px) {

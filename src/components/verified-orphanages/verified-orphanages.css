@@ -1,6 +1,5 @@
 .verified-orphanages {
   padding: 20px 10px;
-  margin: 50px 40px;
 }
 .verified-orphanages h3 {
   font-size: 24px;
@@ -8,13 +7,10 @@
   font-weight: var(--font-weight);
   text-transform: capitalize;
 }
-.verified-orphanages aside {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.verified-orphanages .deskOrphanage {
+  display: none;
 }
 .verified-orphanages aside div {
-  display: flex;
-  flex-direction: column;
   background-color: var(--laying-color);
   padding: 20px 25px;
   margin: 15px 0;
@@ -35,13 +31,15 @@
   line-height: 21px;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (min-width: 700px) {
   .verified-orphanages {
     padding: 20px 5%;
   }
   .verified-orphanages aside {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
   }
   .verified-orphanages aside div {
     padding: 20px 10px;
@@ -51,6 +49,18 @@
   .verified-orphanages h3 {
     font-size: 40px;
     line-height: 60px;
+  }
+  .verified-orphanages .mobileOrphanage {
+    display: none;
+  }
+  .verified-orphanages .deskOrphanage {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .verified-orphanages .deskOrphanage div {
+    flex: 30%;
   }
   .verified-orphanages aside {
     gap: 20px;
@@ -63,4 +73,4 @@
     font-size: 16px;
     line-height: 24px;
   }
-} /*# sourceMappingURL=verified-orphanages.css.map */
+}/*# sourceMappingURL=verified-orphanages.css.map */

@@ -15,7 +15,7 @@ export default function WhyUsComponent(){
         {
             id:1,
             areYou:"Verified Orphanages",
-            img:<img src={vector} alt='img2' />,
+            img:<img src={vector} alt='img2' className="icon img2" />,
             answer:"We vet all orphanage homes listed to ensure that they meet our strict standards transparency, accountability, and child protection."
         },
         {
@@ -33,8 +33,7 @@ export default function WhyUsComponent(){
         return(
             <div key={each.id}>
                 <span className='image-wrapper'>
-                   {/* <img src={each.img} alt={each.areYou} />  */}
-                   {each.img}
+                    <span>{each.img}</span> 
                 </span>
                 <h3>{each.areYou}</h3>
                 <p>{each.answer}</p>
