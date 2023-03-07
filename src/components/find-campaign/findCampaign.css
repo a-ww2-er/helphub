@@ -1,5 +1,6 @@
 .what-it-is-about {
   padding: 20px 0px;
+  max-width: 80%;
 }
 .what-it-is-about h3 {
   font-size: 24px;
@@ -24,7 +25,7 @@
 
 @media screen and (min-width: 700px) {
   .what-it-is-about {
-    width: 120%;
+    width: 100%;
     padding: 0;
   }
   .what-it-is-about h3,
@@ -40,4 +41,4 @@
   .what-it-is-about {
     width: 100%;
   }
-}/*# sourceMappingURL=what-it-is-about.css.map */
+}

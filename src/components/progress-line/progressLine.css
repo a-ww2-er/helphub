@@ -1,0 +1,40 @@
+.progress_bg {
+  background-color: var(--each-orphanage-home-bg) !important;
+  border-radius: 20px;
+  height: 15px;
+  width: 100%;
+}
+.progress_bg .progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--sec-color);
+  border-radius: 20px;
+  height: 100%;
+  max-width: 100%;
+  transform: 1s ease 0.3s;
+}
+
+.completed_donation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.completed_donation .icon {
+  padding: 0.5rem;
+  font-size: 5rem;
+  border-radius: 50%;
+  border: solid 3px;
+  color: green;
+}
+.completed_donation p {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.done_btn {
+  cursor: not-allowed;
+  background-color: rgba(131, 164, 208, 0.3254901961);
+}

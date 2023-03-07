@@ -4,6 +4,8 @@
   z-index: 100;
   position: fixed;
   top: 0;
+  left: 0;
+  background-color: rgba(0, 1, 1, 0.4039215686);
 }
 .thank-you .thank-you-container {
   width: 100%;
@@ -44,4 +46,9 @@
   line-height: 30px;
   text-align: center;
   color: #151515;
-}/*# sourceMappingURL=thank-you.css.map */
+}
+.thank-you .thank-you-container aside span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

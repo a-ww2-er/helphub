@@ -77,7 +77,7 @@ export default function Testimony(){
             <aside>
                  <aside>
                 <div>
-                    <img src={testimonies[id].img} alt={testimonies[id].name} />
+                    <img src={testimonies[id].img}  alt={testimonies[id].name} />
                     <span>
                         <h6>{testimonies[id].name}</h6>
                         <p>{testimonies[id].location}</p>

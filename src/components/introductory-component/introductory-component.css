@@ -7,6 +7,8 @@
   font-size: 32px;
   line-height: 48px;
   color: var(--primary-color);
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .introductory-component aside h2 span {
   color: var(--sec-color);
@@ -16,7 +18,7 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--par-color);
-  margin: 10px 0 20px;
+  margin-bottom: 30px;
 }
 .introductory-component aside button {
   font-size: 16px;
@@ -28,7 +30,9 @@
   outline: none;
   border-radius: 8px;
 }
-.introductory-component aside img {
+.introductory-component .img_container img {
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 20px 0;
 }
 
@@ -41,19 +45,24 @@
     gap: 20px;
   }
   .introductory-component aside {
-    width: 48%;
+    width: 50%;
   }
   .introductory-component aside h2 {
     font-size: 35px;
     line-height: 44px;
+    margin-bottom: 30px;
   }
   .introductory-component aside p {
     font-size: 19px;
     line-height: 30px;
+    margin-bottom: 40px;
   }
-  .introductory-component aside button {
-    margin: 10px 0;
-    padding: 10px 40px;
+  .introductory-component img {
+    padding: 60px;
+    padding-right: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 20px 0;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -65,4 +74,4 @@
     font-size: 20px;
     line-height: 30px;
   }
-}/*# sourceMappingURL=introductory-component.css.map */
+}

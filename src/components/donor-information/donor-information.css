@@ -1,5 +1,5 @@
 .donor-details {
-  padding: 20px 10px;
+  padding: 20px 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,16 +56,9 @@
 .donor-details .donation .input-field b {
   margin: 0 0 0 10px;
 }
-.donor-details .donation button {
-  padding: 20px;
+.donor-details .donation .btn.donate_btn {
+  display: block;
   width: 100%;
-  background-color: var(--sec-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 30px 0;
-  color: var(--tie-color);
-  color: var(--tie-color);
 }
 
 @media screen and (min-width: 700px) {
@@ -83,4 +76,11 @@
   .donor-details .donation .input-field {
     padding: 50px 0 0;
   }
-}/*# sourceMappingURL=donor-information.css.map */
+  .btn.next {
+    width: 100%;
+  }
+  .checkbox {
+    display: flex;
+    gap: 10px;
+  }
+}

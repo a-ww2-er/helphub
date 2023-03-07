@@ -1,0 +1,105 @@
+.selected_orphanage_bg {
+  display: flex;
+  flex-direction: column;
+}
+.selected_orphanage_bg .selected_orphanage {
+  background-color: var(--each-orphanage-home-bg);
+  padding: 120px 5%;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.selected_orphanage_bg .selected_orphanage img {
+  width: 480px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.selected_orphanage_bg p {
+  margin: 20px 0;
+  font-weight: 100;
+}
+
+.write_up {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 50%;
+}
+
+h1 {
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 50px;
+  line-height: 2.2;
+}
+
+.hero {
+  padding: 120px 5%;
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero h1 {
+  line-height: 1.5;
+}
+.hero h1 span {
+  color: #1563c8;
+}
+.hero img {
+  border-radius: 10px;
+}
+.hero .icon_container {
+  display: flex;
+  justify-content: space-between;
+}
+.hero .icon_container .icon_bg {
+  border-radius: 50%;
+  border: solid 2.5px var(--sec-color);
+  padding: 15px;
+  position: relative;
+  margin: 10px;
+}
+.hero .icon_container .icon_bg .icon {
+  color: #1563c8;
+  font-size: 35px;
+  transition: 0.3s ease-in-out;
+}
+.hero p {
+  margin: 20px 0;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 700px) {
+  .selected_orphanage_bg .selected_orphanage {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .selected_orphanage_bg .selected_orphanage img {
+    width: 100%;
+    border-radius: 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .selected_orphanage_bg .selected_orphanage .write_up {
+    width: 100%;
+  }
+  .selected_orphanage_bg .selected_orphanage .write_up h1 {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+  .selected_orphanage_bg .selected_orphanage .write_up p {
+    font-size: 16px;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero .write_up {
+    width: auto;
+  }
+}

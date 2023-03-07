@@ -1,29 +1,33 @@
 import Indicator from "../progress-indicator/progress-indicator";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { currencies } from "../../currency-data";
-import WhatItIsAbout from "../what-it-is-about/what-it-is-about";
 import "./donation-amount.css";
 import { useContext } from "react";
 import { AppContext } from "../../context";
+import Modal from "../modal/Modal";
+import FindCampaign from "../find-campaign/FindCampaign";
 
 export default function DonationAmount() {
-  const { amount, setAmount, select, setSelect } = useContext(AppContext);
+  const { amount, setAmount, select, setSelect, setOpenModal } =
+    useContext(AppContext);
+  const { id } = useParams();
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  function checkValue(e) {
+  function checkValue(e ) {
     e.preventDefault();
     if (amount === "") {
-      return
-    }else if(select === ""){
-      return
+      return setOpenModal(true);
+    } else if (select === "") {
+      return setOpenModal(true);
     } else {
-      navigate("/donation/donor-information")
+      navigate(`/donation/donor-information/${id}`);
+      setOpenModal(false);
     }
   }
 
   const currency = currencies.map((each) => {
-    const {currency,id} = each;
+    const { currency, id } = each;
     return (
       <option value={currency} key={id}>
         {currency}
@@ -33,17 +37,15 @@ export default function DonationAmount() {
 
   return (
     <section className="donation-amount ">
-      <WhatItIsAbout />
-
+      <FindCampaign id={id} />
       <aside className="left-side donation">
         <Indicator />
         <h3>Donation Amount</h3>
+        <Modal msg={"Please ensure all fields are filled"} />
         <div className="input-field">
           <div>
             <label htmlFor="currency">select currency</label>
-            <select
-              value={select} onChange={(e) => setSelect(e.target.value)}
-            >
+            <select value={select} onChange={(e) => setSelect(e.target.value)}>
               {currency}
             </select>
           </div>
@@ -58,8 +60,12 @@ export default function DonationAmount() {
           </div>
         </div>
 
-        <button onClick={checkValue}>
-        Next
+        <button className="btn donate_btn"
+          onClick={(id) => {
+            checkValue(id);
+          }}
+        >
+          Next
         </button>
       </aside>
     </section>
