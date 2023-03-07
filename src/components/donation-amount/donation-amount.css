@@ -1,5 +1,5 @@
 .donation-amount {
-  padding: 20px 10px;
+  padding: 20px 5%;
 }
 .donation-amount .donation {
   padding: 30px 20px;
@@ -50,6 +50,9 @@
 .donation-amount .donation button a {
   color: var(--tie-color);
 }
+.donation-amount .donation .btn.donate_btn {
+  display: block;
+}
 
 @media screen and (min-width: 700px) {
   .donation-amount {
@@ -74,4 +77,4 @@
   .donation-amount {
     padding: 20px 5%;
   }
-}/*# sourceMappingURL=donation-amount.css.map */
+}

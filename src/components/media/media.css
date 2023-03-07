@@ -1,0 +1,23 @@
+.media_container {
+  padding: 100px 5%;
+}
+.media_container .photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.media_container span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.media_container span .icon {
+  color: var(--sec-color);
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 740px) {
+  .media_container .photos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

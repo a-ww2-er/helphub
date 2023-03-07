@@ -1,10 +1,12 @@
 .why-us {
   padding: 20px 10px;
+  height: auto;
 
   div {
     background-color: var(--laying-color);
     border-radius: 8px;
     width: 100%;
+    height: auto;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -17,28 +19,31 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 40px;
-      height: 40px;
+      width: 90px;
+      height: auto;
       border-radius: 50%;
-      margin: 0 0 15px;
+      margin-bottom: 20px;
+      margin-top: 50px ;
+      padding: 20px;
       background-color: var(--wrapper-bg);
 
-      span{
+      span {
         display: flex;
         justify-content: center;
         align-items: center;
-        width:100%;
-        height:100%;
-        
+        width: 100%;
+        height: 100%;
+
         .icon {
-        color: #1563c8;
-        width:100%;
+          color: #1563c8;
+          width: auto;
+          font-size: 90px;
+          height: 100%;
+        }
+        .img2 {
+          width: 100%;
+        }
       }
-      .img2{
-        width:60%;
-      }
-      }
-      
     }
 
     h3 {
@@ -51,7 +56,6 @@
       font-size: 14px;
       line-height: 21px;
     }
-    
   }
 }
 
@@ -66,7 +70,7 @@
 
     div {
       width: 100%;
-      height: 260px;
+      height: auto;
     }
   }
 }

@@ -87,9 +87,9 @@ export const orphanagesList = [
   },
   {
     id: 11,
-    title: "children center",
+    title: "children center abuja",
     description:
-      "The Centre has a mandate under the Lagos State Child Rights Law to provide shelter and cater for vulnerable children between ages of 6 and 10. Its a home for the less previledged children.",
+      "The Centre has a mandate under the Abuja State Child Rights Law to provide shelter and cater for vulnerable children between ages of 6 and 10. Its a home for the less previledged children.",
     image: img6,
   },
 ];

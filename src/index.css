@@ -23,6 +23,7 @@
   --smallWidth: 85vw;
   --maxWidth: 40rem;
   --fullWidth: 1170px;
+  --each-orphanage-home-bg: #d1e5fe;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
   font-family: "Heebo", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
 code {
@@ -47,19 +49,33 @@ img {
   outline: none;
   text-transform: capitalize;
   cursor: pointer;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: 0.2s ease-in;
 }
 
 .btn:hover {
-  box-shadow: 0 2px 8px 0 black;
-} /*# sourceMappingURL=landing-page.css.map */
+  box-shadow:0 0 0 100vmax inset  rgba(0, 0, 0, 0.387);
+} 
+.btn:active {
+  transform: scale(.9);
+} 
+
+.donate_btn {
+  background-color: var(--sec-color);
+  color: white;
+}
+.donate_btn2 {
+  font-weight: 100;
+  background-color: var(--sec-color);
+  color: white;
+  border-radius: 8px;
+}
 
 a {
   text-decoration: none;
   color: black;
 }
-li{
-  list-style-type:none;
+li {
+  list-style-type: none;
   text-transform: capitalize;
 }
 .error {
@@ -70,7 +86,7 @@ li{
   justify-content: center;
   align-items: center;
 }
-.error_page{
+.error_page {
   text-align: center;
   color: var(--primary-color);
   font-size: 36px;
@@ -79,9 +95,8 @@ li{
 .error_icon {
   font-size: 60px;
 }
-@media screen and (max-width:740px){
-  .error_page{
-  
+@media screen and (max-width: 740px) {
+  .error_page {
     font-size: 26px;
   }
 }

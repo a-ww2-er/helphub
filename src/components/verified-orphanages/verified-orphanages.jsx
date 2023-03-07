@@ -29,7 +29,7 @@ export default function VerifiedOrphanages() {
   });
 
   return (
-    <section className="verified-orphanages">
+    <section id="verified" className="verified-orphanages">
       <h3>Verified orphanages homes</h3>
       <aside className="mobileOrphanage">{verifiedOrphanageMobile}</aside>
       <aside className="deskOrphanage">{verifiedOrphanageDesk}</aside>

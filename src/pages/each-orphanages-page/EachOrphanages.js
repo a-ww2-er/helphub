@@ -1,10 +1,27 @@
-import { useParams, Link } from "react-router-dom";
+import Campaign from "../../components/campaigns/campaigns";
+import Each_home_page from "../../components/each-home-page/eachHomePage";
+import Media from "../../components/media/Media";
+import Navbar from "../../components/navbar/navbar-component";
+import PersuasionPage from "../../components/persuasion-page/persuasion-page";
+
 const EachOrphanages = () => {
-  const { id } = useParams();
+  const message =
+    "Invest in the future of a child - Donate to our orphanage home today.";
   return (
-    <div>
-      <section style={{textAlign:"center"}}><h1>orphanages home page for orphanage {id}</h1></section>
-    </div>
+    <>
+      <Navbar
+        firstName="home"
+        secondName="campaigns"
+        thirdName="About"
+        fourthName="contact Us"
+      />
+      <div>
+        <Each_home_page />
+        <Campaign />
+        <Media />
+        <PersuasionPage message={message} />
+      </div>
+    </>
   );
 };
 

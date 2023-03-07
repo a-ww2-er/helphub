@@ -24,7 +24,7 @@ const SearchBar = () => {
           <RiSearch2Line  className="input_icon"/>
           <input className="input_box"
             type="text"
-            placeholder="Search for orphanage"
+            placeholder="Search For An Orphanage To Donate "
             ref={searchValue}
             onChange={searching}
           />

@@ -13,10 +13,10 @@ export const currencies = [
     },
     {
       id: 3,
-      currency: "Chinese Yuan (NGN)",
+      currency: "Chinese Yuan (CNY)",
     },
     {
       id: 4,
-      currency: "British Pounds (Euro)",
+      currency: "Euro (EUR)",
     },
   ];
