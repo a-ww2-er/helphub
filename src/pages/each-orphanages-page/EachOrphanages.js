@@ -12,7 +12,7 @@ const EachOrphanages = () => {
       <Navbar
         firstName="home"
         secondName="campaigns"
-        thirdName="media"
+        thirdName="About"
         fourthName="contact Us"
       />
       <div>

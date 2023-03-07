@@ -19,7 +19,7 @@ const AppProvider = ({ children }) => {
   const [date, setDate] = useState("");
   const [cvv, setCvv] = useState("");
   const [pin, setPin] = useState("");
-  const [currentCampaign, setCurrentCampaign] = useState("");
+  const [currentCampaign, setCurrentCampaign] = useState(0);
 
   useEffect(() => {
     const localData = () => {
