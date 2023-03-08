@@ -3,6 +3,7 @@
   display: grid;
   column-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
   /* align-items: start; */
 }
 
@@ -49,10 +50,11 @@
 
 @media screen and (max-width: 740px) {
   .container {
-    margin: 3rem;
+    margin: 2.5rem;
     display: grid;
     column-gap: 2rem;
     grid-template-columns: repeat(1, 1fr);
+    overflow: hidden;
   }
   .each_ophanage p {
     font-size: 14px;
