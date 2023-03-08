@@ -5,6 +5,7 @@
 .input_container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .input_box {
   width: 100vw;
@@ -38,6 +39,7 @@
     position: absolute;
     margin: 1rem;
     margin-top: 0.6rem;
+    padding-top: 0;
     font-size: 25px;
   }
 }
