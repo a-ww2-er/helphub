@@ -63,8 +63,8 @@ export default function DonorInformation() {
               <label htmlFor="Name">Name</label>
               <input
                 type="text"
-                placeholder="Isa Pantami"
-                value={checkBox ? name : "*****"}
+                placeholder={checkBox ? "Isa Pantami" : "********"}
+                value={checkBox ? name : setName("Anonymous")}
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
@@ -72,8 +72,8 @@ export default function DonorInformation() {
               <label htmlFor="email">Email</label>
               <input
                 type="email"
-                placeholder="emailaddress@email.com"
-                value={checkBox ? email : "******"}
+                placeholder= {checkBox ? "emailaddress@email.com" : "*********"}
+                value={checkBox ? email : setEmail("Anonymous@Anonymousmail.com")}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>

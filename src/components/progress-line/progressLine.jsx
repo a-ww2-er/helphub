@@ -22,6 +22,11 @@ const ProgressLine = ({ initialValue, maxValue, value, showExtra, id }) => {
   //   );
   // }
 
+  function handleclick () {
+    setCurrentCampaign(id)
+   scrollFunc()
+  }
+
 
   // here we define what to render for each campaign page if the campaign is completed
   if (!showExtra && fixedValue >= 100) {
@@ -86,7 +91,7 @@ const ProgressLine = ({ initialValue, maxValue, value, showExtra, id }) => {
         <p className="done_btn donate_btn2 btn">Donate now</p>
       ) : showExtra ? (
         // if showExtra is active which means we're on the each campaign page we display a button to link to donate page
-        <Link to={`/donation/${id}`} className="btn donate_btn2" onClick={() => setCurrentCampaign(id)}>
+        <Link to={`/donation/${id}`} className="btn donate_btn2" onClick={handleclick}>
           Donate Now
         </Link>
       ) : (

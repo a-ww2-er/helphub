@@ -8,6 +8,7 @@ import FindCampaign from "../find-campaign/FindCampaign";
 import { useParams } from "react-router-dom";
 import Modal from "../modal/Modal";
 import { campaigns } from "../../campaign-data";
+import Navbar from "../navbar/navbar-component";
 
 export default function PaymentDetail() {
   const [showModal, setShowModal] = useState(false);
@@ -22,13 +23,16 @@ export default function PaymentDetail() {
     setPin,
     amount,
     setOpenModal,
+    currentCampaign,
+    currentPage
   } = useContext(AppContext);
   const { id } = useParams();
 
   // this function shows the modal after payment is done
   function show() {
-    if (cardNumber) {
+    if (cardNumber && cvv && date) {
       setShowModal(true);
+      setOpenModal(false);
       const currentCampaign = campaigns.find((items) => {
         return items.id == id;
       });
@@ -40,7 +44,15 @@ export default function PaymentDetail() {
     }
   }
 
-  return (
+  return (<>
+     <Navbar
+        firstName="home"
+        secondName="campaigns"
+        thirdName="about"
+        fourthName="contact Us"
+        firstLink={`/orphanages/${currentPage}`}
+        secondLink={`/orphanages/campaign/${currentCampaign}`}
+      />
     <section className="payment">
       <FindCampaign id={id} />
       <aside className="donation">
@@ -91,6 +103,6 @@ export default function PaymentDetail() {
       </aside>
 
       {showModal ? <ThankYou showModal={showModal} id={id} /> : ""}
-    </section>
+    </section></>
   );
 }
