@@ -36,7 +36,8 @@
 }
 .why-us div .image-wrapper span .icon {
   color: #1563c8;
-  width: auto;
+  width: 60px;
+  height: 60px;
   font-size: 90px;
   height: auto;
 }

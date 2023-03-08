@@ -38,3 +38,12 @@
   cursor: not-allowed;
   background-color: rgba(131, 164, 208, 0.3254901961);
 }
+
+@media screen and (max-width: 740px) {
+  h2 {
+    line-height: 2rem;
+  }
+  p {
+    line-height: 2rem;
+  }
+}
