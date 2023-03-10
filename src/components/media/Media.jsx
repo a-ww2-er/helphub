@@ -1,6 +1,7 @@
 import { media } from "../../media-data";
 import {MdCamera, MdPhotoCamera} from "react-icons/md"
 import "./media.css";
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 
 const Media = () => {
   return (
@@ -11,7 +12,7 @@ const Media = () => {
           const { id, image } = items;
           return (
             <article key={id}>
-              <img src={image} alt={`image${id}`} />
+              <LazyLoadImage effect="blur" src={image} alt={`image${id}`} />
             </article>
           );
         })}

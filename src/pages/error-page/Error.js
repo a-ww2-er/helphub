@@ -1,9 +1,14 @@
 import { GrAlert } from "react-icons/gr";
 import Navbar from "../../components/navbar/navbar-component";
+import { Helmet } from "react-helmet";
 
 const Error = () => {
   return (
     <>
+    <Helmet>
+        <title>Page Not Found</title>
+        <meta name="description" content="Page Not Found" />
+    </Helmet>
       <Navbar
         firstName="home"
         secondName="orphanages"

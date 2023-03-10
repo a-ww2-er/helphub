@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AppContext } from "../../context";
 import { Link } from "react-router-dom";
+import {LazyLoadImage} from "react-lazy-load-image-component";
 import "./orphanagesList.css";
 
 const OrphanagesList = () => {
@@ -25,7 +26,7 @@ const OrphanagesList = () => {
              onClick={()=> handlePageReset(id)}
           >
             <section>
-              <img src={image} alt={title} className="img" />
+              <LazyLoadImage effect="blur" src={image} alt={title} className="img" />
               <h2>{title}</h2>
               <p>{description}</p>
             </section>

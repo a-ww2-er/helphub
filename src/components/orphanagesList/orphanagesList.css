@@ -50,11 +50,13 @@
 
 @media screen and (max-width: 740px) {
   .container {
-    margin: 2.5rem;
+    padding: 2rem 0.5rem;
     display: grid;
     column-gap: 2rem;
     grid-template-columns: repeat(1, 1fr);
     overflow: hidden;
+    /* border:2px solid red; */
+    margin:10px;
   }
   .each_ophanage p {
     font-size: 14px;
