@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Tick from "../../assets/thank-you-icon/Vector (4).png";
 import "./thank-you.css";
 
-export default function ThankYou({showModal, id}) {  
+export default function ThankYou({showModal, id,transaction}) {  
   return (
     <section className="thank-you">
       <section className="thank-you-container">
@@ -13,6 +13,7 @@ export default function ThankYou({showModal, id}) {
             Your donation will go a long way in providing education for orphans
             in need.
           </p>
+          <p> {`transaction id: ${transaction}`}</p>
          <span> <Link to="/"  className="btn">Home</Link><Link to={`/orphanages/campaign/${id}`} className="btn"  >Campaign</Link></span>
         </aside>
       </section>
