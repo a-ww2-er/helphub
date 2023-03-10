@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { campaigns } from "../../campaign-data";
 import { AppContext } from "../../context";
 import ProgressLine from "../progress-line/progressLine";
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 import "./singleCampaign.css";
 
 const SingleCampaign = () => {
@@ -16,7 +17,7 @@ const SingleCampaign = () => {
     <>
       <div className="campaign_container">
         <article className="campaign_content">
-          <img src={image} alt={title} />
+          <LazyLoadImage effect="blur" src={image} alt={title} /> 
           <h2>{title}</h2>
           <p>{description}</p>
           <h3>Target: NGN {maxValue}</h3>

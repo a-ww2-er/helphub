@@ -12,10 +12,10 @@
   padding: 50px 0 0;
   margin: 10px 0;
 }
-.donation-amount .donation .input-field div {
+.donation-amount .donation .input-field > div {
   margin: 20px 0;
 }
-.donation-amount .donation .input-field div label {
+.donation-amount .donation .input-field > div label {
   display: block;
   text-transform: capitalize;
   margin: 7px 0;
@@ -23,8 +23,8 @@
   line-height: 24px;
   color: #151515;
 }
-.donation-amount .donation .input-field div input,
-.donation-amount .donation .input-field div select {
+.donation-amount .donation .input-field > div input,
+.donation-amount .donation .input-field > div select {
   width: 100%;
   padding: 10px 20px;
   height: 50px;
@@ -32,10 +32,28 @@
   border-radius: 8px;
   font-size: 18px;
 }
-.donation-amount .donation .input-field div input::-moz-placeholder {
+.donation-amount .donation .input-field > div .select {
+  position: relative;
+}
+.donation-amount .donation .input-field > div .select img {
+  width: auto;
+  position: absolute;
+  top: 45%;
+  right: 20px;
+  transition: transform 0.3s;
+}
+.donation-amount .donation .input-field > div .select:active img {
+  transform: rotate(180deg);
+}
+.donation-amount .donation .input-field > div select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.donation-amount .donation .input-field > div input::-moz-placeholder {
   font-size: 18px;
 }
-.donation-amount .donation .input-field div input::placeholder {
+.donation-amount .donation .input-field > div input::placeholder {
   font-size: 18px;
 }
 .donation-amount .donation button {
@@ -64,6 +82,7 @@
   }
   .donation-amount .donation {
     padding: 70px 20px;
+    width: 170%;
   }
   .donation-amount .donation h3 {
     margin: 5px 0 10px;
@@ -77,4 +96,4 @@
   .donation-amount {
     padding: 20px 5%;
   }
-}
+}/*# sourceMappingURL=donation-amount.css.map */

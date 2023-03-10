@@ -1,6 +1,6 @@
 .what-it-is-about {
-  padding: 20px 0px;
-   max-width: 80%;
+  margin: 10px 0px;
+  width: 100%;
   h3 {
     font-size: 24px;
     line-height: 36px;
@@ -31,7 +31,7 @@
 @media screen and (min-width: 700px) {
   .what-it-is-about {
     width: 100%;
-    padding: 0;
+    margin: 0;
 
     h3,
     h4 {

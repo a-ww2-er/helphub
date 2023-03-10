@@ -1,6 +1,7 @@
 import './our-mission-component.css';
 import kids2 from "../../assets/Hero-photos/kids2.png"
-import vector2 from "../../assets/Home icons and images/Vector-2.png"
+import vector2 from "../../assets/Home icons and images/Vector-2.png";
+import {LazyLoadImage} from "react-lazy-load-image-component";
 
 export default function OurMissionComponent(){
     // create an array of achievement 
@@ -43,7 +44,7 @@ export default function OurMissionComponent(){
                 </aside>
             </aside>
             <aside>
-               <img className="heroimg" src={kids2} alt="happy kids"/> 
+               <LazyLoadImage effect="blur" className="heroimg" src={kids2} alt="happy kids"/> 
             </aside>
             
         </section>

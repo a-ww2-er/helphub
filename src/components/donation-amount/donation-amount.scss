@@ -12,7 +12,7 @@
             padding: 50px 0 0;
             margin: 10px 0;
 
-            div {
+          >  div {
                 margin: 20px 0;
 
                 label {
@@ -32,6 +32,33 @@
                     border: .5px solid var(--par-color);
                     border-radius: 8px;
                     font-size: 18px;
+                }
+
+                .select{
+                    position:relative;
+
+                    img{
+                        width:auto;
+                        position:absolute;
+                        top:45%;
+                        right:20px;
+                        transition:transform .3s;
+                    }
+                }
+
+                .select:active img{
+                    transform:rotate(180deg);
+                }
+
+                select {
+                    appearance: none;
+                    // outline: 0;
+                    // width: 100%;
+                    // height: 100%;
+                    // color: black;
+                    // cursor: pointer;
+                    // border: 1px solid black;
+                    // border-radius: 3px;
                 }
 
                 input::placeholder {
@@ -71,7 +98,8 @@
 
         .donation {
             padding: 70px 20px;
-
+            width:170%;
+//             border:2px solid red;
             h3 {
                 margin: 5px 0 10px;
             }

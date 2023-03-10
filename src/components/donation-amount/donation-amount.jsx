@@ -1,4 +1,5 @@
 import Indicator from "../progress-indicator/progress-indicator";
+import Vector from './Vector (11).png';
 import { useNavigate, useParams } from "react-router-dom";
 import { currencies } from "../../currency-data";
 import "./donation-amount.css";
@@ -45,9 +46,13 @@ export default function DonationAmount() {
         <div className="input-field">
           <div>
             <label htmlFor="currency">select currency</label>
-            <select value={select} onChange={(e) => setSelect(e.target.value)}>
+            <div className="select"> 
+          <select value={select} onChange={(e) => setSelect(e.target.value)}>
               {currency}
             </select>
+            <img src={Vector} alt="arrow" className="arrow" />
+            </div>
+            
           </div>
           <div>
             <label htmlFor="amount">Amount</label>
