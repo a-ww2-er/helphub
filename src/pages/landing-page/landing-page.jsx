@@ -12,7 +12,7 @@ export default function LandingPage() {
   return (
     <>
       <Helmet>
-        <title>iDonate</title>
+        <title>HelpHub</title>
         <meta name="description" content="Connecting you to verified orphanage homes" />
       </Helmet>
 

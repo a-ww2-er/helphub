@@ -13,7 +13,7 @@ export default function ThankYou({showModal, id,transaction}) {
             Your donation will go a long way in providing education for orphans
             in need.
           </p>
-          <p> {`transaction id: ${transaction}`}</p>
+          {/* <p> {`transaction id: ${transaction}`}</p> */}
          <span> <Link to="/"  className="btn">Home</Link><Link to={`/orphanages/campaign/${id}`} className="btn"  >Campaign</Link></span>
         </aside>
       </section>

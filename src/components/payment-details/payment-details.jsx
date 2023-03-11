@@ -16,23 +16,16 @@ export default function PaymentDetail() {
     select,
     cardNumber,
     setCardNumber,
-    email,
-    paymentData,
-    setPaymentData,
     date,
     setDate,
     cvv,
     setCvv,
-
     handlePayStack,
-
     amount,
     setOpenModal,
     currentCampaign,
     currentPage,
-
     transaction,
-
   } = useContext(AppContext);
   const { id } = useParams();
 
@@ -40,17 +33,12 @@ export default function PaymentDetail() {
   function show() {
     if (cardNumber && cvv && date) {
       setOpenModal(false);
-      setShowModal(true);
-      const currentCampaign = campaigns.find((items) => {
-        return items.id == id;
-      });
-      currentCampaign.value = parseInt(amount);
+      handlePayStack(id, campaigns, setShowModal);
       // console.log(amount);
       // console.log(currentCampaign.value)
     } else {
       setOpenModal(true);
     }
-
   }
 
   return (

@@ -15,13 +15,7 @@ const Navbar = ({
   fourthLink
 }) => {
   const { setShowNav, showNav } = useContext(AppContext);
-  //quick easy method to set property-value
-  // if (firstName) {
-  //   links[0].text = firstName;
-  //   links[1].text = secondName;
-  //   links[2].text = thirdName;
-  //   links[3].text = fourthName;
-  // }
+  
   const links = [
     { id: 1, url: firstLink ? firstLink : "/", text: firstName },
     { id: 2, url: secondLink ? secondLink : "/orphanages", text: secondName },
@@ -32,7 +26,7 @@ const Navbar = ({
   return (
     <nav className="navbar">
       <div className="nav_container">
-        <h2 className="logo">LOGO</h2>
+        <h2 className="logo">HelpHub</h2>
 
         <div
           className="nav_toggle"

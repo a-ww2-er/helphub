@@ -48,7 +48,7 @@ export default function Footer() {
     <footer className="footer">
       <aside>
         <h2>
-          <a href="/">LOGO</a>
+          <a href="/">HelpHub</a>
         </h2>
         <p>
           We are connecting donors and supporters with orphanage homes in need,

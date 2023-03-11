@@ -41,32 +41,15 @@ const AppProvider = ({ children }) => {
   }
 
 
-  // paystack integration 
-  const handlePayment = (email, amount) => {
-    const handler = PaystackPop.setup({
-      key: 'pk_test_244bad1335a46ad6442abcb487faefe329bf4989',
-      email,
-      amount: amount * 100,
 
-      onClose: () => {
-        alert('Window closed.');
-      },
 
-      callback: (response) => {
-        const message = 'Payment complete! Reference: ' + response.reference;
-        // call thank you component here
-        alert(message);
-      }
-    });
-
-    handler.openIframe();
-  }
   // useEffect (()=>{
   //   const localData = orphanagesList.map((items)=>{
   //     const {id, title, description, image} =items
   //     return {id, title,description,image}
   //   })
   //   setOrphanages(localData)},[])
+    // paystack integration 
   const handlePayStack = (id, campaigns, setShowModal) => {
     const payStack = new PaystackPop();
     payStack.newTransaction({
@@ -79,7 +62,11 @@ const AppProvider = ({ children }) => {
         // transaction here is an object wed get back from paystack  NOT the state called"transaction"
       onSuccess(transaction) { 
         setTransaction(transaction.transaction);
-       // you can input our success modal functions here
+        setShowModal(true);
+        const currentCampaign = campaigns.find((items) => {
+          return items.id == id;
+        });
+        currentCampaign.value = parseInt(amount);
       },
     });
   };
