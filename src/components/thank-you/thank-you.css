@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding:10px 20px;
 }
 .thank-you .thank-you-container aside {
   display: flex;
@@ -37,12 +38,12 @@
 .thank-you .thank-you-container aside h3 {
   padding: 10px 0;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 25px;
   line-height: 48px;
   color: #051932;
 }
 .thank-you .thank-you-container aside p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
   text-align: center;
   color: #151515;
