@@ -97,7 +97,7 @@ export default function PaymentDetail() {
             />
           </div> */}
           </aside>
-          <button onClick={show}>{`pay ${amount} ${select} `}</button>
+          <a  className="btn donate_btn2" onClick={show}>{`pay ${amount} ${select} `}</a>
         </aside>
 
         {showModal ? (

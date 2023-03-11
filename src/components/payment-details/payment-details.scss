@@ -61,16 +61,11 @@
         }
 
 
-        button {
-            padding: 20px;
-            width: 100%;
-            background-color: var(--sec-color);
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 24px;
-            margin: 30px 0;
-            color: var(--tie-color);
-        }
+       a.btn.donate_btn2{
+        display: block;
+        text-align: center;
+        width: 100%;
+       }
 
     }
 }

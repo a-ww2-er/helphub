@@ -1,7 +1,7 @@
 import "./navbar-component.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { NavLink, Link } from "react-router-dom";
-import { useContext, useEffect, useState } from "react";
+import { useContext,} from "react";
 import { AppContext } from "../../context";
 
 const Navbar = ({
