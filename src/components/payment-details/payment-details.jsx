@@ -15,33 +15,39 @@ export default function PaymentDetail() {
   const {
     cardNumber,
     setCardNumber,
+    email,
+    paymentData,
+    setPaymentData,
     date,
     setDate,
     cvv,
     setCvv,
-    pin,
-    setPin,
     amount,
     setOpenModal,
     currentCampaign,
-    currentPage
+    currentPage,
+    handlePayment
   } = useContext(AppContext);
   const { id } = useParams();
 
   // this function shows the modal after payment is done
   function show() {
-    if (cardNumber && cvv && date) {
-      setShowModal(true);
-      setOpenModal(false);
-      const currentCampaign = campaigns.find((items) => {
-        return items.id == id;
-      });
-      currentCampaign.value = parseInt(amount);
-      console.log(amount);
-      console.log(currentCampaign.value)
-    } else {
-      setOpenModal(true);
-    }
+    // if (cardNumber && cvv && date) {
+    //   setShowModal(true);
+    //   setOpenModal(false);
+      
+    //   const currentCampaign = campaigns.find((items) => {
+    //     return items.id == id;
+    //   });
+    //   currentCampaign.value = parseInt(amount); 
+      
+    // } else {
+    //   setOpenModal(true);
+    // }
+    setPaymentData([...paymentData, {email:email ,amount:amount}])
+    console.log(paymentData)
+    handlePayment(paymentData.email, parseFloat(paymentData.amount))
+    
   }
 
   return (<>
@@ -69,13 +75,15 @@ export default function PaymentDetail() {
               onChange={(e) => setCardNumber(e.target.value)}
             />
           </div>
-          <div>
+          <section>
+            <div className="expiry-date">
             <label htmlFor="Expiry Date">Expiry Date</label>
             <input
               type="number"
               placeholder="09/12"
               value={date}
               onChange={(e) => setDate(e.target.value)}
+             
             />
           </div>
           <div className="pin-size">
@@ -85,8 +93,11 @@ export default function PaymentDetail() {
               placeholder="123"
               value={cvv}
               onChange={(e) => setCvv(e.target.value)}
+              className="cvv"
             />
           </div>
+          </section>
+          
           {/* <div className="pin-size">
             <label htmlFor="Pin">Pin</label>
             <input

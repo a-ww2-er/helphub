@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { orphanagesList } from "../../local-data";
-import { Link } from "react-router-dom";
-import { FaDog, FaDocker, FaSpider, FaDove } from "react-icons/fa";
+// import { Link } from "react-router-dom";
+// import { FaDog, FaDocker, FaSpider, FaDove } from "react-icons/fa";
 import "./eachHomePage.css";
 import img1 from "../../assets/orphanages-photos/img-8.png";
 import { GiPeaceDove, GiCoins, GiReceiveMoney } from "react-icons/gi";

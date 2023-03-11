@@ -1,11 +1,10 @@
 import { useContext } from "react";
 import { AppContext } from "../../context";
 import { Link } from "react-router-dom";
-import {LazyLoadImage} from "react-lazy-load-image-component";
 import "./orphanagesList.css";
 
 const OrphanagesList = () => {
-  const { loading, orphanages, setCurrentPage } = useContext(AppContext);
+  const { orphanages, setCurrentPage } = useContext(AppContext);
 
   const handlePageReset = (id) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -26,7 +25,7 @@ const OrphanagesList = () => {
              onClick={()=> handlePageReset(id)}
           >
             <section>
-              <LazyLoadImage effect="blur" src={image} alt={title} className="img" />
+              <img src={image} alt={title} className="img" />
               <h2>{title}</h2>
               <p>{description}</p>
             </section>
