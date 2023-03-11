@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 .payment .circle:first-child {
   background-color: var(--wrapper-bg2);
