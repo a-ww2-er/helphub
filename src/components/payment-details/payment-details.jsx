@@ -16,16 +16,23 @@ export default function PaymentDetail() {
     select,
     cardNumber,
     setCardNumber,
+    email,
+    paymentData,
+    setPaymentData,
     date,
     setDate,
     cvv,
     setCvv,
+
     handlePayStack,
+
     amount,
     setOpenModal,
     currentCampaign,
     currentPage,
+
     transaction,
+
   } = useContext(AppContext);
   const { id } = useParams();
 
@@ -43,6 +50,7 @@ export default function PaymentDetail() {
     } else {
       setOpenModal(true);
     }
+
   }
 
   return (

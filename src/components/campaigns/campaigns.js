@@ -5,7 +5,7 @@ import { campaigns } from "../../campaign-data";
 import { AppContext } from "../../context";
 import ProgressLine from "../progress-line/progressLine";
 import "./campaigns.css";
-import {LazyLoadImage} from 'react-lazy-load-image-component';
+
 
 // function is set to truncate the text if its on mobile
 const Campaign = () => {
@@ -18,7 +18,7 @@ const Campaign = () => {
       );
       return (
         <article key={id} className="campaign_card">
-          <LazyLoadImage effect="blur" src={image} alt={title} />
+          <img src={image} alt={title} />
           <h3>{title}</h3>
           <p>{description}</p>
           <ProgressLine

@@ -17,6 +17,7 @@ const AppProvider = ({ children }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [cardNumber, setCardNumber] = useState("");
+  const [paymentData, setPaymentData] = useState([])
   const [date, setDate] = useState("");
   const [cvv, setCvv] = useState("");
   const [transaction, setTransaction] = useState("");
@@ -37,6 +38,28 @@ const AppProvider = ({ children }) => {
 
   function scrollFunc() {
     return window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+
+  // paystack integration 
+  const handlePayment = (email, amount) => {
+    const handler = PaystackPop.setup({
+      key: 'pk_test_244bad1335a46ad6442abcb487faefe329bf4989',
+      email,
+      amount: amount * 100,
+
+      onClose: () => {
+        alert('Window closed.');
+      },
+
+      callback: (response) => {
+        const message = 'Payment complete! Reference: ' + response.reference;
+        // call thank you component here
+        alert(message);
+      }
+    });
+
+    handler.openIframe();
   }
   // useEffect (()=>{
   //   const localData = orphanagesList.map((items)=>{
@@ -91,8 +114,10 @@ const AppProvider = ({ children }) => {
         currentCampaign,
         setCurrentCampaign,
         setOpenModal,
+
         handlePayStack,
         transaction,
+
       }}
     >
       {children}

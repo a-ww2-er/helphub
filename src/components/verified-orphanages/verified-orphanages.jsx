@@ -1,6 +1,6 @@
 import "./verified-orphanages.css";
 import { orphanagesList } from "../../local-data";
-import {LazyLoadImage} from 'react-lazy-load-image-component';
+
 
 export default function VerifiedOrphanages() {
   //return only a portion of our local-data
@@ -11,7 +11,7 @@ export default function VerifiedOrphanages() {
     const { title, description, image, id } = each;
     return (
       <div key={id}>
-        <LazyLoadImage effect="blur" src={image} alt={title} />
+        <img src={image} alt={title} />
         <h4>{title}</h4>
         <p>{description}</p>
       </div>
