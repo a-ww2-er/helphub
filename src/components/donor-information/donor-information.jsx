@@ -27,9 +27,12 @@ export default function DonorInformation() {
   // has to include regex to check for a perfect email match
 
   function checkValue() {
-    const regex = /[a-zA-z0-9/_%+-]+@[a-z0-9*-]+\.[a-z]{2,8}(.[a-z{2,8}])?/gi;
+    const regexemail =
+      /[a-zA-z0-9/_%+-]+@[a-z0-9*-]+\.[a-z]{2,8}(.[a-z{2,8}])?/gi;
+    const regexname = /^[A-Za-z]{1,25}$/gi;
     if (
-      regex.test(email) &&
+      regexemail.test(email) &&
+      regexname.test(name) &&
       name !== "" &&
       name.length > 1 &&
       email !== "" &&
@@ -58,34 +61,42 @@ export default function DonorInformation() {
           <Indicator />
           <h3>Donation Information</h3>
           <Modal msg={"Please ensure all fields are filled correctly"} />
-          <aside className="input-field">
-            <div className="">
-              <label htmlFor="Name">Name</label>
-              <input
-                type="text"
-                placeholder={checkBox ? "Isa Pantami" : "********"}
-                value={checkBox ? name : setName("Anonymous")}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-            <div className="">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                placeholder= {checkBox ? "emailaddress@email.com" : "*********"}
-                value={checkBox ? email : setEmail("Anonymous@Anonymousmail.com")}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <div className="checkbox">
-              <input
-                type="checkbox"
-                className="checkbox"
-                onChange={() => setCheckBox(!checkBox)}
-              />
-              <p>Anonymous donation ?</p>
-            </div>
-          </aside>
+
+          <form>
+            <aside className="input-field">
+              <div className="">
+                {" "}
+                <label htmlFor="Name">Full-Name</label>
+                <input
+                  type="text"
+                  placeholder={checkBox ? "Isa Pantami" : "********"}
+                  value={checkBox ? name : setName("Anonymous")}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </div>
+              <div className="">
+                <label htmlFor="email">Email</label>
+                <input
+                  type="email"
+                  placeholder={
+                    checkBox ? "emailaddress@email.com" : "*********"
+                  }
+                  value={
+                    checkBox ? email : setEmail("Anonymous@Anonymousmail.com")
+                  }
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <div className="checkbox">
+                <input
+                  type="checkbox"
+                  className="checkbox"
+                  onChange={() => setCheckBox(!checkBox)}
+                />
+                <p>Anonymous donation ?</p>
+              </div>
+            </aside>
+          </form>
           <button
             className="btn next donate_btn"
             onClick={() => {

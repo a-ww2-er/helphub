@@ -28,10 +28,17 @@ export default function PaymentDetail() {
     transaction,
   } = useContext(AppContext);
   const { id } = useParams();
-
+  const regexcard = /^.{12,18}$/;
+  const regexcvv = /^.{3,4}$/;
   // this function shows the modal after payment is done
   function show() {
-    if (cardNumber && cvv && date) {
+    if (
+      regexcard.test(cardNumber) &&
+      regexcvv.test(cvv) &&
+      cardNumber &&
+      cvv &&
+      date
+    ) {
       setOpenModal(false);
       handlePayStack(id, campaigns, setShowModal);
       // console.log(amount);
@@ -56,7 +63,17 @@ export default function PaymentDetail() {
         <aside className="donation">
           <Indicator />
           <h3>Payment Details</h3>
-          <Modal msg={"Please ensure all fields are filled correctly"} />
+          <Modal
+            msg={
+              !regexcard.test(cardNumber)
+                ? "Card Number should be valid "
+                : !regexcvv.test(cvv)
+                ? "Please fill in a valid CVV "
+                : !date
+                ? "Please fill in a valid expiry date"
+                : setOpenModal(false)
+            }
+          />
           <aside className="input-field">
             <div>
               <label htmlFor="Card Number">Card Number</label>
@@ -67,23 +84,27 @@ export default function PaymentDetail() {
                 onChange={(e) => setCardNumber(e.target.value)}
               />
             </div>
-            <div>
-              <label htmlFor="Expiry Date">Expiry Date</label>
-              <input
-                type="number"
-                placeholder="MM/YY"
-                value={date}
-                onChange={(e) => setDate(e.target.value)}
-              />
-            </div>
             <div className="pin-size">
-              <label htmlFor="cvv">CVV</label>
-              <input
-                type="number"
-                placeholder="123"
-                value={cvv}
-                onChange={(e) => setCvv(e.target.value)}
-              />
+              <div>
+                <label htmlFor="Expiry Date">Expiry Date</label>
+                <input
+                  style={{ fontFamily: "heebo", textTransform: "uppercase" }}
+                  type="date"
+                  value={date}
+                  onChange={(e) => setDate(e.target.value)}
+                />
+              </div>
+              <div>
+                <label htmlFor="cvv">CVV</label>
+                <input
+                  type="number"
+                  placeholder="123"
+                  // pattern="^.{1,6}$"
+                  // required
+                  value={cvv}
+                  onChange={(e) => setCvv(e.target.value)}
+                />
+              </div>
             </div>
             {/* <div className="pin-size">
             <label htmlFor="Pin">Pin</label>
@@ -97,7 +118,10 @@ export default function PaymentDetail() {
             />
           </div> */}
           </aside>
-          <a  className="btn donate_btn2" onClick={show}>{`pay ${amount} ${select} `}</a>
+          <a
+            className="btn donate_btn2"
+            onClick={show}
+          >{`pay ${amount} ${select} `}</a>
         </aside>
 
         {showModal ? (

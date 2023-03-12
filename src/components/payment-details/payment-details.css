@@ -28,6 +28,13 @@
   padding: 10px 0 0;
   margin: 10px 0;
 }
+.payment .donation .input-field .pin-size {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 10px;
+  width: 100%;
+}
 .payment .donation .input-field div {
   margin: 20px 0;
 }
