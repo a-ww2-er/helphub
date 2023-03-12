@@ -35,6 +35,7 @@
   width: 100%;
 }
 .payment .donation .input-field .pin-size div {
+  min-width: 50%;
   margin-right: 10px;
 }
 .payment .donation .input-field div {
