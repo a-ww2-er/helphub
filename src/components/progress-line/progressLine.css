@@ -40,10 +40,14 @@
 }
 
 @media screen and (max-width: 740px) {
-  h2 {
-    line-height: 2rem;
+  .btn.donate_btn2 {
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+  .progress_bg {
+    margin: 1.3rem 0;
   }
   p {
-    line-height: 2rem;
+    margin: 1.2rem 0;
   }
 }

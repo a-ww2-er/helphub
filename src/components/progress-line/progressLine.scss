@@ -1,7 +1,5 @@
-
-
 .progress_bg {
-  background-color: var(--each-orphanage-home-bg)!important;
+  background-color: var(--each-orphanage-home-bg) !important;
   border-radius: 20px;
   height: 15px;
   width: 100%;
@@ -15,43 +13,42 @@
     height: 100%;
     max-width: 100%;
     transform: 1s ease 0.3s;
-    
   }
 }
 .completed_donation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
 
-  .icon{
+  .icon {
     padding: 0.5rem;
     font-size: 5rem;
     border-radius: 50%;
     border: solid 3px;
     color: green;
   }
-  p{
+  p {
     font-size: 2.5rem;
     line-height: 1;
   }
 }
-.done_btn{
+.done_btn {
   cursor: not-allowed;
   background-color: #83a4d053;
 }
-@media  screen and (max-width:740px) {
-    .progress_bg{
-      
-        .progress{
 
-        }
-    }
-    h2 {
-      line-height: 2rem;
-    }
-    p{
-      line-height: 2rem;
-    }
+@media screen and (max-width: 740px) {
+  .btn.donate_btn2 {
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+
+  .progress_bg {
+    margin: 1.3rem 0;
+  }
+  p {
+    margin: 1.2rem 0;
+  }
 }

@@ -53,7 +53,7 @@ const ProgressLine = ({ initialValue, maxValue, value, showExtra, id }) => {
         </p>
 
         {/* button which is diabled */}
-        <p className="done_btn donate_btn2 btn">Donate now</p>
+        <a className="done_btn donate_btn2 btn">Donate now</a>
       </>
     );
   }

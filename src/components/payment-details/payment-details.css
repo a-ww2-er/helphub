@@ -32,8 +32,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  gap: 10px;
   width: 100%;
+}
+.payment .donation .input-field .pin-size div {
+  margin-right: 10px;
 }
 .payment .donation .input-field div {
   margin: 20px 0;
