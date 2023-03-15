@@ -13,6 +13,10 @@
       align-items: start;
       padding: 24px;
       gap: 18px;
+      img{
+        object-fit: cover;
+        max-height: 225px;
+      }
     }
   }
 }

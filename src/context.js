@@ -17,7 +17,7 @@ const AppProvider = ({ children }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [cardNumber, setCardNumber] = useState("");
-  const [paymentData, setPaymentData] = useState([])
+  const [paymentData, setPaymentData] = useState([]);
   const [date, setDate] = useState("");
   const [cvv, setCvv] = useState("");
   const [transaction, setTransaction] = useState("");
@@ -40,33 +40,38 @@ const AppProvider = ({ children }) => {
     return window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-
-
-
   // useEffect (()=>{
   //   const localData = orphanagesList.map((items)=>{
   //     const {id, title, description, image} =items
   //     return {id, title,description,image}
   //   })
   //   setOrphanages(localData)},[])
-    // paystack integration 
+
+  // paystack integration
   const handlePayStack = (id, campaigns, setShowModal) => {
     const payStack = new PaystackPop();
     payStack.newTransaction({
       key: "pk_test_d97eda9b349087c621a24ddda7abcb92083e1bb9", //my payStack acc key
       amount: amount * 100,
-      email: email, 
-      onCancel() {  // you can display a modal here or leave it like this..
-        alert("You have Cancelled the Transaction")},
-        
-        // transaction here is an object wed get back from paystack  NOT the state called"transaction"
-      onSuccess(transaction) { 
+      email: email,
+      onCancel() {
+        // you can display a modal here or leave it like this..
+        alert("You have Cancelled the Transaction");
+      },
+
+      // transaction here is an object wed get back from paystack  NOT the state called"transaction"
+      onSuccess(transaction) {
         setTransaction(transaction.transaction);
         setShowModal(true);
-        const currentCampaign = campaigns.find((items) => {
+        const orphanageHome = campaigns.find((items) => {
+          return items.id == currentPage;
+        });
+        const currentCampaign = orphanageHome.projects.find((items) => {
           return items.id == id;
         });
-        currentCampaign.value = parseInt(amount);
+     
+          currentCampaign.value = currentCampaign.value + parseInt(amount);
+      
       },
     });
   };
@@ -104,7 +109,6 @@ const AppProvider = ({ children }) => {
 
         handlePayStack,
         transaction,
-
       }}
     >
       {children}

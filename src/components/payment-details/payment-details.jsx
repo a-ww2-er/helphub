@@ -59,7 +59,7 @@ export default function PaymentDetail() {
         secondLink={`/orphanages/campaign/${currentCampaign}`}
       />
       <section className="payment">
-        <FindCampaign id={id} />
+      <FindCampaign campaignId={id} />
         <aside className="donation">
           <Indicator />
           <h3>Payment Details</h3>

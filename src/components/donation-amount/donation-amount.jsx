@@ -9,7 +9,7 @@ import Modal from "../modal/Modal";
 import FindCampaign from "../find-campaign/FindCampaign";
 
 export default function DonationAmount() {
-  const { amount, setAmount, select, setSelect, setOpenModal } =
+  const { amount, setAmount, select, setSelect, setOpenModal, currentPage } =
     useContext(AppContext);
   const { id } = useParams();
 
@@ -38,7 +38,7 @@ export default function DonationAmount() {
 
   return (
     <section className="donation-amount ">
-      <FindCampaign id={id} />
+      <FindCampaign campaignId={id} />
       <aside className="left-side donation">
         <Indicator />
         <h3>Donation Amount</h3>

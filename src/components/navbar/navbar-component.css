@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--laying-color);
-  padding: 1.5rem 5%;
+  padding: 0 5%;
 }
 
 .nav_toggle {
@@ -16,11 +16,16 @@
 .logo{
   color: var(--sec-color);
 }
+.links_container{
+  display: flex;
+  justify-content: center;
+  height: 80px;
+}
 .links {
   display: flex;
   align-items: center;
   gap:20px;
-  padding:.5rem 1rem;
+  padding:0.5rem 1rem;
   
 }
 .each_link {
@@ -30,9 +35,9 @@
   color: var(--sec-color);
 }
 .active{
-  border-radius: 2px;
+  border-radius: 1px;
   border-bottom: solid var(--sec-color) 3px;
-  padding-bottom: 7px;
+  padding-bottom: 20px;
   color: var(--sec-color);
 }
 
@@ -91,6 +96,11 @@
   }
   .active{
     left:0;
-
+    color: var(--sec-color);
+      border-radius: 0;
+      border-bottom: none;
+      padding-bottom: 20px;
+      
+    
   }
 }

@@ -10,6 +10,9 @@ import Error from "./pages/error-page/Error";
 import EachOrphanages from "./pages/each-orphanages-page/EachOrphanages";
 import ThankYou from "./components/thank-you/thank-you";
 import EachCampaign from "./pages/campaign-page/EachCampaign";
+import About from "./pages/about-page/AboutPage";
+import ContactUs from "./pages/contact-page/ContactPage";
+
 
 function App() {
   return (
@@ -27,6 +30,8 @@ function App() {
         <Route path="/orphanages" element={<Orphanages />} />
         <Route path="/orphanages/:id" element={<EachOrphanages />} />
         <Route path="/orphanages/campaign/:id" element={<EachCampaign />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact-us" element={<ContactUs />} />
         {/* error page */}
         <Route path="*" element={<Error />}></Route>;
       </Routes>

@@ -2,13 +2,19 @@
 import "./findCampaign.css";
 
 import { campaigns } from "../../campaign-data";
+import { useContext } from "react";
+import { AppContext } from "../../context";
 
 
-export default function FindCampaign({id}) {
+export default function FindCampaign({campaignId}) {
+ const {currentPage} = useContext(AppContext)
 
-  const campaignDonatingTo =campaigns.find((items) => {
+  const orphanageHome = campaigns.find((items)=>{
+    return items.id == currentPage
+  })
+  const campaignDonatingTo =orphanageHome.projects.find((items) => {
     return (
-          items.id == id
+          items.id == campaignId
     )})
     const {title ,image, description, maxValue}=campaignDonatingTo
   return (

@@ -24,6 +24,7 @@ const EachCampaign = () => {
         thirdName="about"
         fourthName="contact Us"
         firstLink={`/orphanages/${currentPage}`}
+        secondLink="#"
       />
       <SingleCampaign />
     </>

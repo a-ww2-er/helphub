@@ -19,6 +19,8 @@ const EachOrphanages = () => {
         secondName="campaigns"
         thirdName="About"
         fourthName="contact Us"
+        secondLink={"#"}
+        
       />
       <div>
         <Each_home_page />

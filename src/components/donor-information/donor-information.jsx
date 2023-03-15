@@ -56,7 +56,7 @@ export default function DonorInformation() {
         secondLink={`/orphanages/campaign/${currentCampaign}`}
       />
       <section className="donor-details">
-        <FindCampaign id={id} />
+      <FindCampaign campaignId={id} />
         <aside className="donation">
           <Indicator />
           <h3>Donation Information</h3>
