@@ -18,7 +18,7 @@ export default function FindCampaign({campaignId}) {
     )})
     const {title ,image, description, maxValue}=campaignDonatingTo
   return (
-    <div>
+    
           <section className="what-it-is-about">
             <aside>
               <img src={image} alt="happy kid" />
@@ -28,6 +28,6 @@ export default function FindCampaign({campaignId}) {
               <h4>Target: NGN {maxValue}</h4>
             </aside>
           </section>
-    </div>
+    
   );
 }

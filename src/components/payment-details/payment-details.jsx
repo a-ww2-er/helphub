@@ -12,6 +12,8 @@ import Navbar from "../navbar/navbar-component";
 
 export default function PaymentDetail() {
   const [showModal, setShowModal] = useState(false);
+ 
+
   const {
     select,
     cardNumber,

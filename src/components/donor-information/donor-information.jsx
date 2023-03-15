@@ -29,7 +29,7 @@ export default function DonorInformation() {
   function checkValue() {
     const regexemail =
       /[a-zA-z0-9/_%+-]+@[a-z0-9*-]+\.[a-z]{2,8}(.[a-z{2,8}])?/gi;
-    const regexname = /^[A-Za-z]{1,25}$/gi;
+    const regexname = /[a-zA-z]+\s[a-zA-z]+/;
     if (
       regexemail.test(email) &&
       regexname.test(name) &&
@@ -56,11 +56,11 @@ export default function DonorInformation() {
         secondLink={`/orphanages/campaign/${currentCampaign}`}
       />
       <section className="donor-details">
-      <FindCampaign campaignId={id} />
+        <FindCampaign campaignId={id} />
         <aside className="donation">
           <Indicator />
           <h3>Donation Information</h3>
-          <Modal msg={"Please ensure all fields are filled correctly"} />
+          <Modal msg={" Please Ensure Each field is Filled Correctly"} />
 
           <form>
             <aside className="input-field">
@@ -70,7 +70,7 @@ export default function DonorInformation() {
                 <input
                   type="text"
                   placeholder={checkBox ? "Isa Pantami" : "********"}
-                  value={checkBox ? name : setName("Anonymous")}
+                  value={checkBox ? name : setName("Anony mous")}
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>

@@ -26,7 +26,7 @@ export default function DonationAmount() {
       setOpenModal(false);
     }
   }
-
+  
   const currency = currencies.map((each) => {
     const { currency, id } = each;
     return (
