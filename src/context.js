@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { orphanagesList } from "./local-data";
-import PaystackPop from "@paystack/inline-js";
+// import PaystackPop from "@paystack/inline-js";
 //context:
 const AppContext = React.createContext();
 
@@ -48,33 +48,33 @@ const AppProvider = ({ children }) => {
   //   setOrphanages(localData)},[])
 
   // paystack integration
-  const handlePayStack = (id, campaigns, setShowModal) => {
-    const payStack = new PaystackPop();
-    payStack.newTransaction({
-      key: "pk_test_d97eda9b349087c621a24ddda7abcb92083e1bb9", //my payStack acc key
-      amount: amount * 100,
-      email: email,
-      onCancel() {
-        // you can display a modal here or leave it like this..
-        alert("You have Cancelled the Transaction");
-      },
+  // const handlePayStack = (id, campaigns, setShowModal) => {
+  //   const payStack = new PaystackPop();
+  //   payStack.newTransaction({
+  //     key: "pk_test_d97eda9b349087c621a24ddda7abcb92083e1bb9", //my payStack acc key
+  //     amount: amount * 100,
+  //     email: email,
+  //     onCancel() {
+  //       // you can display a modal here or leave it like this..
+  //       alert("You have Cancelled the Transaction");
+  //     },
 
-      // transaction here is an object wed get back from paystack  NOT the state called"transaction"
-      onSuccess(transaction) {
-        setTransaction(transaction.transaction);
-        setShowModal(true);
-        const orphanageHome = campaigns.find((items) => {
-          return items.id == currentPage;
-        });
-        const currentCampaign = orphanageHome.projects.find((items) => {
-          return items.id == id;
-        });
+  //     // transaction here is an object wed get back from paystack  NOT the state called"transaction"
+  //     onSuccess(transaction) {
+  //       setTransaction(transaction.transaction);
+  //       setShowModal(true);
+  //       const orphanageHome = campaigns.find((items) => {
+  //         return items.id == currentPage;
+  //       });
+  //       const currentCampaign = orphanageHome.projects.find((items) => {
+  //         return items.id == id;
+  //       });
      
-          currentCampaign.value = currentCampaign.value + parseInt(amount);
+  //         currentCampaign.value = currentCampaign.value + parseInt(amount);
       
-      },
-    });
-  };
+  //     },
+  //   });
+  // };
 
   return (
     <AppContext.Provider
@@ -107,7 +107,7 @@ const AppProvider = ({ children }) => {
         setCurrentCampaign,
         setOpenModal,
 
-        handlePayStack,
+        // handlePayStack,
         transaction,
       }}
     >
