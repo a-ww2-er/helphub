@@ -40,12 +40,12 @@ const AppProvider = ({ children }) => {
     return window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  useEffect (()=>{
-    const localData = orphanagesList.map((items)=>{
-      const {id, title, description, image} =items
-      return {id, title,description,image}
-    })
-    setOrphanages(localData)},[])
+ // useEffect (()=>{
+  //  const localData = orphanagesList.map((items)=>{
+  //    const {id, title, description, image} =items
+  //    return {id, title,description,image}
+  //  })
+ //   setOrphanages(localData)},[])
 
   // paystack integration
   const handlePayStack = (id, campaigns, setShowModal) => {
