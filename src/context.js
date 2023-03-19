@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { orphanagesList } from "./local-data";
-import PaystackPop from "@paystack/inline-js";
+// import PaystackPop from "@paystack/inline-js";
 //context:
 const AppContext = React.createContext();
 
@@ -40,12 +40,12 @@ const AppProvider = ({ children }) => {
     return window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
-  // useEffect (()=>{
-  //   const localData = orphanagesList.map((items)=>{
-  //     const {id, title, description, image} =items
-  //     return {id, title,description,image}
-  //   })
-  //   setOrphanages(localData)},[])
+  useEffect (()=>{
+    const localData = orphanagesList.map((items)=>{
+      const {id, title, description, image} =items
+      return {id, title,description,image}
+    })
+    setOrphanages(localData)},[])
 
   // paystack integration
   const handlePayStack = (id, campaigns, setShowModal) => {

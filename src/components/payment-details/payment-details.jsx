@@ -120,10 +120,10 @@ export default function PaymentDetail() {
             />
           </div> */}
           </aside>
-          <a
+          {/* <a
             className="btn donate_btn2"
             onClick={show}
-          >{`pay ${amount} ${select} `}</a>
+          >{`pay ${amount} ${select} `}</a> */}
         </aside>
 
         {showModal ? (
