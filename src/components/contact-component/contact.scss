@@ -1,45 +1,45 @@
-.contact{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px 10px;
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
 
-    p{
-        font-size:20px;
-        margin:20px 0;
+  p {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  div {
+    label {
+      display: block;
+      margin: 10px 0;
     }
 
-    div{
-        label{
-            display:block;
-            margin:10px 0;
-        }
-
-
-        input,textarea{
-            width:100%;
-            padding:20px;
-            height:40px;
-            border:2px solid grey;
-            border-radius:8px;
-            font-size:18px;
-        }
-
-        textarea{
-            height:200px;
-           max-height:200px;
-        }
-
-       
-
-    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 20px;
+      height: 40px;
+      border: 2px solid grey;
+      border-radius: 8px;
+      font-size: 18px;
     
-    button{
-            width:100%;
-            background-color:var(--sec-color);
-            color:var(--tie-color);
-            padding:15px;
-            margin:20px 0;
-            font-size:20px;
-        }
+        font-family: "Heebo", sans-serif;
+      }
+    
+
+    textarea {
+      height: 200px;
+      max-height: 200px;
+    }
+  }
+
+  button {
+    width: 100%;
+    background-color: var(--sec-color);
+    color: var(--tie-color);
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 20px;
+  }
 }

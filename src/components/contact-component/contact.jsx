@@ -5,7 +5,7 @@ export default function Contact() {
     <section className="contact">
       <form className="contact-form">
         <h2>Contact Us</h2>
-        <p>Feel free to contact me for any questions or suggestions.</p>
+        <p>Feel free to contact us for any questions or suggestions.</p>
         <div>
           <label htmlFor="name">Name</label>
           <input type="text" name="name" id="name" placeholder="Your name" />

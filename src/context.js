@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { orphanagesList } from "./local-data";
-// import PaystackPop from "@paystack/inline-js";
+ import PaystackPop from "@paystack/inline-js";
+
+ 
 //context:
 const AppContext = React.createContext();
 
