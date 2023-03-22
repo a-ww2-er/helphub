@@ -23,20 +23,28 @@
   color: var(--tie-color);
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
   border-radius: 8px;
   margin: 15px 0;
 }
+.our-mission aside aside div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .our-mission aside aside div h4 {
   font-weight: var(--font-weight);
   font-size: 24px;
-  line-height: 36px;
+  padding: 10px 0;
+  margin-bottom: 0%;
 }
 .our-mission aside aside div p {
   font-size: 17px;
-  line-height: 25px;
+  height: 40px;
+  margin-bottom: 20px;
 }
 .our-mission aside > img {
   border-radius: 8px;
@@ -76,5 +84,16 @@
   .our-mission > aside aside div {
     width: 25%;
     padding: 0 20px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .our-mission aside aside {
+    gap: 0;
+    justify-content: center;
+    width: 100%;
+  }
+  .our-mission aside aside div {
+    justify-content: center;
+    width: 100%;
   }
 }

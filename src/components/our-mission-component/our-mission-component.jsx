@@ -17,7 +17,7 @@ export default function OurMissionComponent(){
         },
         {
             id:2,
-            achieve:"Orphans Homes",
+            achieve:"Orphans",
             number:500,
         },
     ]

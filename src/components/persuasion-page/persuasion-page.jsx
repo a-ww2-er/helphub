@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./persuasion-page.css";
 
 export default function PersuasionPage({message}) {
@@ -7,7 +8,7 @@ export default function PersuasionPage({message}) {
         <h2>
          { message || "Make a difference in a child's life - donate to an orphanage home."}
         </h2>
-        <button className="btn">Donate now</button>
+        <Link to="/orphanages" className="btn donate_btn2">Donate now</Link>
       </aside>
     </section>
   );
