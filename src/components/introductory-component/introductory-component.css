@@ -66,12 +66,19 @@
   }
 }
 @media screen and (min-width: 1000px) {
+  .introductory-component aside.img_container{
+    width:45%;
+  }
+  .introductory-component aside{
+    width:60%;
+  }
   .introductory-component aside h2 {
-    font-size: 45px;
-    line-height: 60px;
+    font-size:56px;
+    line-height: 66px;
   }
   .introductory-component aside p {
     font-size: 20px;
     line-height: 30px;
+    width:80%;
   }
 }

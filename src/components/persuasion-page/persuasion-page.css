@@ -3,6 +3,7 @@
   width: 100%;
 }
 .persuation-page aside {
+  /* background-image:url('/src/assets/Home icons and images/Rectangle 28.png'); */
   background-color: var(--sec-color);
   color: var(--tie-color);
   padding: 40px 30px;
@@ -40,7 +41,7 @@
   .persuation-page aside button {
     width: 40%;
     padding: 18px;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -51,5 +52,12 @@
     font-size: 48px;
     line-height: 72px;
     margin: 0 0 40px;
+  }
+  .persuation-page aside .donate_btn2{
+    width:30%;
+    transition:color .6s ease-in;
+  }
+  .persuation-page aside .donate_btn2:hover{
+    color:white;
   }
 }
