@@ -76,9 +76,13 @@
   }
   .persuation-page aside .donate_btn2{
     width:30%;
-    transition:color .6s ease-in;
+    background-color:white;
+    transition:all .3s ease-in;
   }
   .persuation-page aside .donate_btn2:hover{
     color:white;
+    box-shadow:none;
+    background-color:transparent;
+    outline:2px solid var(--tie-color);
   }
 }
