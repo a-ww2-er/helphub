@@ -1,7 +1,7 @@
 import './why-us-component.css';
-import { FaHandshake, FaMailBulk } from 'react-icons/fa';
-
 import vector from "../../assets/Home icons and images/Vector.png"
+import group from "../../assets/Home icons and images/Group.svg"
+import blocks from "../../assets/Home icons and images/blocks.svg"
 
 export default function WhyUsComponent(){
     // create an array of reasons why we should be trusted 
@@ -9,7 +9,7 @@ export default function WhyUsComponent(){
         {
             id:0,
             areYou:"Transparent",
-            img:<FaHandshake  className='icon'/>,
+            img:<img src={blocks} alt="stack" className='icon'/>,
             answer:" We ensure that every donation received is used efficiently and effectively to meet the needs of the children."
         },
         {
@@ -21,7 +21,7 @@ export default function WhyUsComponent(){
         {
             id:2,
             areYou:"Direct Impact",
-            img:<FaMailBulk className='icon'/>,
+            img:<img src={group} alt="handshake"  className='icon'/>,
             answer:"Donations help provide basic necessities like food and clothing, as well as educational and extracurricular opportunities."
         },
     ];

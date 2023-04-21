@@ -10,7 +10,7 @@
 .our-mission aside h3 {
   font-size: 24px;
   line-height: 36px;
-  font-weight: var(--font-weight);
+  font-weight: var(--font-weight); 
 }
 .our-mission aside p {
   font-size: 16px;
@@ -74,11 +74,29 @@
   }
 }
 @media screen and (min-width: 1000px) {
+  .our-mission aside.kids{
+    width:40%;
+  } 
+  .our-mission aside h3{
+    font-size:48px;
+    margin:30px 0;
+  }
+  .our-mission aside p{
+    font-size:20px;
+    line-height:30px;
+  }
+
+  .our-mission > aside aside p {
+    font-size:20px;
+    line-height:25px;
+    margin:5px 0;
+  }
   .our-mission > aside aside {
     position: relative;
     left: auto;
     top: auto;
     width: 100%;
+    margin:30px 0 0;
     padding: 5px;
   }
   .our-mission > aside aside div {

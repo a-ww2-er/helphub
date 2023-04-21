@@ -61,7 +61,7 @@
   }
   .each_link{
     margin: 3rem 2.5rem;
-    color: white;
+    color: white;border:2px solid red
   }
 
   .nav_toggle {

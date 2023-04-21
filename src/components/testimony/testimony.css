@@ -37,6 +37,7 @@
 .testimony aside aside div span p {
   font-size: 12px;
   line-height: 18px;
+  margin:0;
 }
 .testimony aside aside > p {
   font-size: 13px;
@@ -72,7 +73,7 @@
     line-height: 30px;
   }
   .testimony h3 {
-    font-size: 35px;
+    font-size: 40px;
     line-height: 60px;
     margin: 0;
   }
