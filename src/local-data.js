@@ -4,6 +4,9 @@ import img2 from "../src/assets/orphanages-photos/img-2.png";
 import img3 from "../src/assets/orphanages-photos/img-3.png";
 import img4 from "../src/assets/orphanages-photos/img-4.png";
 import img6 from "../src/assets/orphanages-photos/img-6.png";
+import img7 from "../src/assets/orphanages-photos/img-7.png";
+import img8 from "../src/assets/orphanages-photos/img-8.png";
+
 export const orphanagesList = [
   {
     id: 0,

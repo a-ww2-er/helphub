@@ -4,9 +4,7 @@ import "./persuasion-page.css";
 export default function PersuasionPage({message}) {
   return (
     <section className="persuation-page">
-      
       <aside>
-        <main></main>
         <h2>
          { message || "Make a difference in a child's life - donate to an orphanage home."}
         </h2>

@@ -1,12 +1,9 @@
 .persuation-page {
   padding: 20px 10px;
   width: 100%;
-  position:relative;
 }
 .persuation-page aside {
-  background-image:url('/src/assets/Home icons and images/bg.png');
-  background-repeat:no-repeat;
-  background-size:cover;
+  background-color: var(--sec-color);
   color: var(--tie-color);
   padding: 40px 30px;
   border-radius: 8px;
@@ -16,23 +13,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position:relative;
-}
-.persuation-page main{
-  padding:40px;
-  position:absolute;
-  top:0px;
-  width:100%;
-  height:100%;
-  background-color:rgba(0, 0, 255, 0.681);
-  border-radius:10px;
 }
 .persuation-page aside h2 {
   font-weight: var(--font-weight);
   font-size: 24px;
   line-height: 36px;
   margin: 0 0 25px;
-  z-index:3;
 }
 .persuation-page aside .donate_btn2 {
   background-color: var(--tie-color);
@@ -41,16 +27,11 @@
   line-height: 24px;
   font-weight: var(--font-weight);
   width: 60%;
-  z-index:2;
 }
 
 @media screen and (min-width: 700px) {
   .persuation-page {
     padding: 20px 5%;
-  }
-  .persuation-page main{
-    height:100%;
-    width:100%;
   }
   .persuation-page aside h2 {
     font-size: 38px;
@@ -59,13 +40,10 @@
   .persuation-page aside button {
     width: 40%;
     padding: 18px;
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 1000px) {
-  .persuation-page main{
-    height:100%;
-  }
   .persuation-page aside {
     padding: 100px 18%;
   }
@@ -73,16 +51,5 @@
     font-size: 48px;
     line-height: 72px;
     margin: 0 0 40px;
-  }
-  .persuation-page aside .donate_btn2{
-    width:30%;
-    background-color:white;
-    transition:all .3s ease-in;
-  }
-  .persuation-page aside .donate_btn2:hover{
-    color:white;
-    box-shadow:none;
-    background-color:transparent;
-    outline:2px solid var(--tie-color);
   }
 }
